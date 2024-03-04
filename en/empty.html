@@ -6,13 +6,11 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
       $( function(){
-        $('#window1').draggable({handle: '#title1'});
+        $('.window').draggable({handle: '.title'});
       });
-
-      $( function(){
-        $('#browser').click( function(){
-          $('#window1').show()
-        });
+      
+      $('.close').click(function(){
+        $('.window').hide()
       });
     </script>
   </head>
